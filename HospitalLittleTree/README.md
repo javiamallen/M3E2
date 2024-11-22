@@ -1,7 +1,7 @@
 # Proyecto Hospital Little Tree
 
 ## Descripción
-Este proyecto fue desarrollado como parte de la especialización en Front-End de **Adalid**, financiada por **CORFO Capital Humano 2024**. 
+Este proyecto fue desarrollado como parte de la especialización en Front-End de **Adalid**, por **CORFO Capital Humano 2024**. 
 
 ### Autor: Javiera Allende
 
