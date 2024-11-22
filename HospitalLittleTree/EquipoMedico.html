@@ -3,36 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hospital Little Tree - Equipo Médico</title>
+  <title>Equipo Médico - Hospital Little Tree</title>
   <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/team.js"></script>
 </head>
 <body>
   <!-- Encabezado -->
-  <header class="header">
-    <div class="header__container">
-      <h1 class="header__title">Hospital Little Tree</h1>
-      <nav class="header__nav">
-        <a href="index.html" class="header__nav-link">Inicio</a>
-        <a href="EquipoMedico.html" class="header__nav-link">Equipo Médico</a>
-        <a href="contacto.html" class="header__nav-link">Contacto</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Hospital Little Tree</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="EquipoMedico.html">Equipo Médico</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Equipo Médico -->
-  <section id="equipo" class="section section--equipo">
-    <h2 class="section__title">Nuestro Equipo Médico</h2>
-    <div id="team-list" class="equipo__list">
-      <!-- Contenido dinámico generado por JavaScript -->
-    </div>
+  <!-- Sección de Equipo Médico -->
+  <section id="equipo">
+    <h2>Equipo Médico</h2>
+    <ul id="experienced-doctors"></ul>
   </section>
 
   <!-- Pie de página -->
-  <footer class="footer">
-    <p>© 2024 Hospital Little Tree. Todos los derechos reservados.</p>
+  <footer>
+    <p>© 2024 Hospital Little Tree</p>
   </footer>
-
-  <script src="scripts/main.js"></script>
-  <script src="scripts/team.js"></script>
 </body>
 </html>
