@@ -3,32 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipo Médico - Hospital Little Tree</title>
+  <title>Equipo Médico</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <script defer src="scripts/team.js"></script>
 </head>
 <body>
-  <!-- Encabezado -->
-  <header>
-    <h1>Hospital Little Tree</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="EquipoMedico.html">Equipo Médico</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hospital Little Tree</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Equipo Médico</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <!-- Sección de Equipo Médico -->
-  <section id="equipo">
-    <h2>Equipo Médico</h2>
-    <ul id="experienced-doctors"></ul>
-  </section>
+  <main class="team-section">
+    <h2>Conoce a Nuestro Equipo Médico</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="images/doctor1.jpg" alt="Doctor 1">
+            <div class="team-card-body">
+              <h3>Dr. Juan Pérez</h3>
+              <p>Pediatra - 10 años de experiencia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="images/doctor2.jpg" alt="Doctor 2">
+            <div class="team-card-body">
+              <h3>Dra. María López</h3>
+              <p>Cardióloga Infantil - 8 años de experiencia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="images/doctor3.jpg" alt="Doctor 3">
+            <div class="team-card-body">
+              <h3>Dra. Ana Gómez</h3>
+              <p>Especialista en Terapia Física - 12 años de experiencia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>© 2024 Hospital Little Tree</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Hospital Little Tree</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -1,153 +1,64 @@
-/* Reset de Estilos Básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Encabezado */
-  .header {
-    background-color: #4caf50;
-    color: white;
-    padding: 20px 0;
-  }
-  
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .header__title {
-    font-size: 24px;
-  }
-  
-  .header__nav {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .header__nav-link {
-    color: white;
-    text-decoration: none;
+/* Encabezado */
+.header {
+  background-color: #4caf50;
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Botones y textos */
+.btn-primary {
+  background-color: #e91e63;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d81b60;
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .card-title {
     font-size: 18px;
   }
-  
-  .header__nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  .header__button {
-    background-color: #e91e63;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .header__button:hover {
-    background-color: #c2185b;
-  }
-  
-  /* Sección de Equipo Médico */
-  .section {
-    padding: 40px 20px;
-  }
-  
-  .section__title {
-    font-size: 32px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .team__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .team__item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team__item img {
-    width: 100%;
-    border-radius: 8px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .team__item h3 {
-    font-size: 24px;
-    margin-top: 10px;
-  }
-  
-  .team__item p {
-    font-size: 16px;
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  /* Pie de Página */
-  .footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .footer__info p {
-    margin-bottom: 10px;
-  }
-  
-  .footer__social {
-    margin-top: 20px;
-  }
-  
-  .footer__social-title {
-    margin-bottom: 10px;
-  }
-  
-  .footer__social-link {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .footer__social-link:hover {
-    text-decoration: underline;
-  }
-  
-  .footer__copyright {
-    margin-top: 20px;
+
+  .card-text {
     font-size: 14px;
   }
-  
-  /* Media Queries para Responsividad */
-  @media (max-width: 768px) {
-    .header__container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .header__nav {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .team__list {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
